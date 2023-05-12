@@ -1,0 +1,126 @@
+/* --- Reset --- */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font: inherit;
+}
+
+html {
+    color-scheme: dark light;
+}
+
+img, picture, svg, video {
+    display: block;
+    max-width: 100%;
+}
+/* --- Reset --- */
+
+/* --- Variables --- */
+:root {
+    --bg-img-layer: -10;
+    --nav-layer: 10;
+    
+}
+/* --- Variables --- */
+
+body {
+    min-height: 100vh;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Space Grotesk', sans-serif;
+    background-color: #ffeedf;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #145434;
+    border-bottom: 1px solid #145434;
+    padding: 0 1rem;
+}
+
+nav h1 {
+    font-size: 2rem;
+    font-weight:bolder;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 800,
+  'GRAD' 0,
+  'opsz' 48
+}
+
+section {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3em;
+    padding: 3em 10em;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 22em;
+    position: relative;
+    padding: 2em 2em 3.5em;
+    background-color: #145434;
+    color:#ffeedf;
+}
+
+.numbers {
+    background-color: #ffeedf;
+    color:#145434;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border: 2px solid #145434;
+    border-radius: 50%;
+    padding: 0.2rem 0.6rem;
+    position: absolute;
+    top:-1rem;
+    left:-1rem;
+}
+
+.article-title {
+    padding-bottom: 1em;
+    border-bottom: 1px solid #ffeedf;
+    font-size: 2rem;
+}
+
+.article-description {
+    padding-top: 0.5rem;
+}
+
+.article-description span {
+    font-weight: bold;
+}
+
+button {
+    background-color: #ffeedf;
+    color:#145434;
+    font-size: 0.8rem;
+    font-weight: bold;
+    border: 2px solid #145434;
+    padding: 0.8rem 4rem;
+    position: absolute;
+    bottom:-0.8rem;
+    right:-0.5rem;
+}
+
+.arrow {
+    position: absolute;
+    bottom: 0;
+    right:0;
+    color: #145434;
+}
